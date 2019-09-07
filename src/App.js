@@ -35,6 +35,7 @@ export default function MediaControlCard() {
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
+            Hello fellow hoomans
             Let your music taste dictate where you go next
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
