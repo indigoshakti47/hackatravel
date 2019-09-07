@@ -1,0 +1,26 @@
+.header-container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 10vh;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.header-profile{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15vw;
+    background-color: black;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    overflow: hidden;
+    
+}
+.header-profile img{
+    height: 100%;
+    width: auto;    
+}
+.header-logo{
+    color:#ec7404;
+    margin-right: 5%;
+    font-size: 1.8rem;
+}
