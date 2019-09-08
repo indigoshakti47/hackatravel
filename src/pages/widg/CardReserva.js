@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Cardreserva() {
+export default function Cardreserva({imagenPath, precio}) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -53,13 +53,16 @@ export default function Cardreserva() {
     <Card className={classes.card}>
       <CardMedia
         className={classes.media}
-        image="./images/extremesports.jpg"
+        image={imagenPath}
         title="Extreme sports"
+        precio=""
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           Pones tu disposición y nosotros ponemos la aventura. Invita a tú pareja y arriesgate!
         </Typography>
+        <h2>Precio Especial:</h2>
+        <div>{precio}</div>
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
@@ -79,10 +82,6 @@ export default function Cardreserva() {
           <ExpandMoreIcon />
         </IconButton>
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
-        </CardContent>
-      </Collapse>
     </Card>
   );
 }
