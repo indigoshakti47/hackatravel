@@ -20,4 +20,4 @@ const App = () => (
   </CssBaseline>
 )
 
-export default App
+export default App;
