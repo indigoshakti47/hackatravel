@@ -10,6 +10,7 @@ import Reserva from './pages/Reservar'
 import './App.css'
 
 const App = () => (
+  
   <Router>
         <Header />
         <Route path="/" exact component={Reserva} />
@@ -18,4 +19,4 @@ const App = () => (
   </Router>
 )
 
-export default App
+export default App;
