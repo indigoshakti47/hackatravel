@@ -5,7 +5,7 @@ const MarkerComponent = ({ text }) => <div>{text}</div>;
 
 const Map = ({ location }) => {
     return (
-        <div style={{ height: '400px', width: '400px' }}>
+        <div style={{ height: '400px', width: '400px', marginTop: '40px' }}>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: 'AIzaSyAK7bhwFBja9fm9I78AJ8pfpfnCP4xf2cM' }}
                 defaultCenter={{ lat: 0, lng: 0 }}

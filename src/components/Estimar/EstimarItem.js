@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import {Button} from 'react-mdl'
 
 import Map from '../Map'
 
@@ -41,18 +42,37 @@ const EstimarItem = () => {
     }, [locationName])
 
     return (
-        <div>
-            <div>Tipo de Propiedad</div>
-            <select>
-                <option value="inmueble">Inmueble</option>
-                <option value="vehiculo">Vehiculo</option>
-            </select>
-            <div>Direccion:</div>
-            <input type="text" placeholder="Direccion" ref={inputRef} />
-            <button onClick={() => setLocationName(inputRef.current.value)}>Buscar</button>
-            <div>Tamano:</div>
-            <input type="text" placeholder="En mts" />
-            <Map location={location} />
+        <div className="container">
+            <div className="row">
+                <div className="col s12 m8 l9">
+                <Map location={location} />
+                </div>
+                <div className="col s12 m4 l3" style={{ marginTop: '40px' }}>
+                    <div style={{fontFamily: "times", fontSize:"25pt", fontStyle:"italic",}}>Tipo de Propiedad</div>
+                    <br></br>
+                    <select>
+                        <option value="inmueble">Inmueble</option>
+                        <option value="vehiculo">Vehiculo</option>
+                    </select>
+                    <div style={{ fontSize:"14pt" }}>Dirección:</div>
+
+                    <br></br>
+
+
+
+                    <input type="text" placeholder="Dirección" ref={inputRef} />
+                    <br></br>
+
+                    <button className="btn" onClick={() => setLocationName(inputRef.current.value)}>Buscar</button>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    
+                    <div style={{ fontSize:"14pt" }}>Tamaño en metros:</div>
+                    <input type="text" placeholder="200m" />
+                </div>
+                <div className="col "></div>
+            </div>
         </div>
     )
 }

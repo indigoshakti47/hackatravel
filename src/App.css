@@ -5,6 +5,7 @@
     margin: 0;
 }
 
-:root {
+#root, html {
     font-family: 'Open Sans', sans-serif;
+    background: #00B0FF;
 }

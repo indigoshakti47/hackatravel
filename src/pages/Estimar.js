@@ -4,10 +4,13 @@ import EstimarItem from '../components/Estimar/EstimarItem'
 const Estimar = () => {
     const [estimarItems, setEstimarItems] = useState({}) 
     return (
-        <div>
-            <div>Añadir tus propiedades:</div>
+        <div className="container">
             <EstimarItem />
-            <button>Quiero Mis Puntos</button>
+            <div class="row">
+                <div className="col s12 m12 l12 center-align">
+                    <button className="btn">VER OFERTAS</button>
+                </div>
+            </div>
         </div>
     )
 }
