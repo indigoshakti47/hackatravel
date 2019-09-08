@@ -5,17 +5,19 @@ import Header from './components/header/Header'
 import Index from './pages/Index'
 import Estimar from './pages/Estimar'
 import Reserva from './pages/Reservar'
-
+import CssBaseline from '@material-ui/core/CssBaseline'
 
 import './App.css'
 
 const App = () => (
-  <Router>
-        <Header />
-        <Route path="/" exact component={Reserva} />
-        <Route path="/estimar" component={Estimar} />
-        <Route path="/reservar" component={Reserva} />
-  </Router>
+  <CssBaseline>
+    <Router>
+      <Header />
+      <Route path="/" exact component={Index} />
+      <Route path="/estimar" component={Estimar} />
+      <Route path="/reservar" component={Reserva} />
+    </Router>
+  </CssBaseline>
 )
 
 export default App
