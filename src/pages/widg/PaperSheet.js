@@ -15,7 +15,6 @@ export default function PaperSheet() {
   return (
     <div>
       <Paper className={classes.root}>
-      
         <Typography variant="h5" component="h3">
           This is a sheet of paper.
         </Typography>
