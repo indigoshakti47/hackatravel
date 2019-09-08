@@ -54,7 +54,7 @@ const EstimarItem = () => {
                         <option value="inmueble">Inmueble</option>
                         <option value="vehiculo">Vehiculo</option>
                     </select>
-                    <div style={{ fontSize:"14pt" }}>Dirección:</div>
+                    <div style={{ fontSize:"14pt", color:"#fff" }}>Dirección:</div>
 
                     <br></br>
 
@@ -68,7 +68,7 @@ const EstimarItem = () => {
                     <br></br>
                     <br></br>
                     
-                    <div style={{ fontSize:"14pt" }}>Tamaño en metros:</div>
+                    <div style={{ fontSize:"14pt", color:"#fff" }}>Tamaño en metros:</div>
                     <input type="text" placeholder="200m" />
                 </div>
                 <div className="col "></div>

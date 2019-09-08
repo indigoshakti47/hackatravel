@@ -7,5 +7,12 @@
 
 #root, html {
     font-family: 'Open Sans', sans-serif;
-    background: #00B0FF;
+    background: #00e5ff;
+    color: #fff;
+}
+
+input {
+    background: #ffff !important;
+    border-radius: 5px !important;
+    padding: 0px 10px !important;
 }
