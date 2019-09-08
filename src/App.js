@@ -1,34 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import Navbar from './components/navbar/Navbar'
 import Header from './components/header/Header'
-import BodyContainer from './components/bodycontainer/BodyContainer'
+import Index from './pages/Index'
+import Estimar from './pages/Estimar'
+import Reserva from './pages/Reservar'
 
 
 import './App.css'
 
-export default class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      page:0
-    }
-  }
-  changepage(newpage,newlocal, parent){
-    parent.setState({
-      page:newpage
-    })
-    window.location = newlocal;
-  }
+const App = () => (
+  <Router>
+        <Header />
+        <Route path="/" exact component={Reserva} />
+        <Route path="/estimar" component={Estimar} />
+        <Route path="/reservar" component={Reserva} />
+  </Router>
+)
 
-
-  render() {
-    return (
-      <div>
-        <Header/>
-        <BodyContainer page={this.state.page}/>
-        <Navbar changefunc={this.changepage} parentnav={this} page={this.state.page}/>
-      </div>
-    )
-  }
-}
+export default App

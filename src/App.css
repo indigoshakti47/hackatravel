@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans&display=swap');
 
 
-html,.root,body {
+* {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    height: 100%;
 }
-.bodycontainer-container{
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-.root{
-    overflow: hidden;
+
+:root {
+    font-family: 'Open Sans', sans-serif;
 }
